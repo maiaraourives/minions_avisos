@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1047660756029",
+    "project_id": "avisos-minions",
+    "storage_bucket": "avisos-minions.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047660756029:android:ad72d37768c4cd36ae3e54",
+        "android_client_info": {
+          "package_name": "com.example.avisos_pendecias"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJckqdIIwhgnhErPOnw_ZJo53WCn8SjU0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -9,8 +9,8 @@ class CsTextButton extends StatelessWidget {
     this.color,
     this.splashColor,
     this.padding,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   final String label;
   final void Function()? onPressed;

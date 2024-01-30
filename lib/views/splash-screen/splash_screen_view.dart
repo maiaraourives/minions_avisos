@@ -8,7 +8,7 @@ import '../../services/service_locator.dart';
 import '../../widgets/cs_circular_progress_indicador.dart';
 
 class SplashScreenView extends StatefulWidget {
-  const SplashScreenView({Key? key}) : super(key: key);
+  const SplashScreenView({super.key});
 
   @override
   State<SplashScreenView> createState() => _SplashScreenViewState();
@@ -30,10 +30,10 @@ class _SplashScreenViewState extends State<SplashScreenView> {
       if (currentUser != null) {
         // Se já existe um usuário autenticado, redirecione para a tela inicial
         getIt<NavigationService>().pushNamedAndRemoveUntil(LocalRoutes.HOME);
+      } else {
+        Future.delayed(const Duration(seconds: 2), () => getIt<NavigationService>().pushNamedAndRemoveUntil(LocalRoutes.LOGIN, args: true));
       }
-    } catch (_) {
-      Future.delayed(const Duration(seconds: 2), () => getIt<NavigationService>().pushNamedAndRemoveUntil(LocalRoutes.LOGIN, args: true));
-    }
+    } catch (_) {}
   }
 
   @override
